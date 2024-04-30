@@ -73,31 +73,23 @@
     /* Metin içindeki uzun kelimeleri böl */
     p {
         white-space: nowrap; /* Alt satıra geçmesini engelle */
-        font-size: 19px; /* Yazı boyutunu 18 piksel olarak ayarla */
+        font-size: 17px; /* Yazı boyutunu 17 piksel olarak ayarla */
         font-family: Arial, sans-serif; /* Yazı tipini Arial ve genel olarak sans-serif olarak ayarla */
+        margin: 0; /* Metinler arasında boşluk bırakma */
     }
 </style>
 </head>
 <body>
 
-<div id="ortaAçıklama"></div>
-
-<script>
-// Açıklama metni
-var açıklamaMetni = "*Bu web sitesindeki olasılıkların hesaplanma yöntemi: Gerçekleşen Durumun (istenilen aralıkta olan deprem sayısı) / Tüm Duruma (olan tüm deprem sayısı) Bölünesmi İle Bulunur.*";
-
-// Orta div'in referansı alınıyor
-var ortaDiv = document.getElementById("ortaAçıklama");
-
-// Açıklama metnini div'e ekleme
-ortaDiv.innerHTML = "<p>" + açıklamaMetni + "</p>";
-</script>
+<div id="ortaAçıklama">
+    <p>*Bu web sitesindeki olasılıkların hesaplanma yöntemi: Gerçekleşen Durumun (istenilen aralıkta olan deprem sayısı) / Tüm Duruma (olan tüm deprem sayısı) Bölünesmi İle Bulunur*</p>
+    <br>
+    <p>**Deprem Aralığı 1910-2017 Alınmıştır. Kaynak: https://www.kaggle.com/datasets/caganseval/earthquake **</p>
+</div>
 
 </body>
 </html>
 
-</html>
-</html>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -126,40 +118,4 @@ ortaDiv.innerHTML = "<p>" + açıklamaMetni + "</p>";
 </body>
 </html>
 
-<div id="ortaAçıklama2"></div>
 
-<script>
-// Açıklama metni
-var açıklamaMetni2 = "**Deprem Aralığı 1910-2017 Alınmıştır. Kaynak: https://www.kaggle.com/datasets/caganseval/earthquake **";
-
-// Orta div'in referansı alınıyor
-var ortaDiv2 = document.getElementById("ortaAçıklama2");
-
-// Açıklama metnini div'e ekleme
-ortaDiv.innerHTML = "<p>" + açıklamaMetni2 + "</p>";
-</script>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Orta Açıklama2</title>
-<style>
-    /* Orta div'i sayfanın ortasına hizalar */
-    #ortaAçıklama2 {
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-    /* Metin içindeki uzun kelimeleri böl */
-    p {
-        white-space: nowrap; /* Alt satıra geçmesini engelle */
-        font-size: 19px; /* Yazı boyutunu 18 piksel olarak ayarla */
-        font-family: Arial, sans-serif; /* Yazı tipini Arial ve genel olarak sans-serif olarak ayarla */
-    }
-</style>
-</head>
-<body>
