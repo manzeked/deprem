@@ -126,7 +126,7 @@ ortaDiv.innerHTML = "<p>" + açıklamaMetni + "</p>";
 </body>
 </html>
 
-<div id2="ortaAçıklama2"></div>
+<div id="ortaAçıklama2"></div>
 
 <script>
 // Açıklama metni
@@ -136,18 +136,30 @@ var açıklamaMetni2 = "**Deprem Aralığı 1910-2017 Alınmıştır. Kaynak: ht
 var ortaDiv2 = document.getElementById("ortaAçıklama2");
 
 // Açıklama metnini div'e ekleme
-ortaDiv2.innerHTML = "<p>" + açıklamaMetni2 + "</p>";
+ortaDiv.innerHTML = "<p>" + açıklamaMetni2 + "</p>";
 </script>
 
-</body>
-</html>
-<title>Orta Açıklama</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orta Açıklama2</title>
 <style>
     /* Orta div'i sayfanın ortasına hizalar */
     #ortaAçıklama2 {
         position: absolute;
-        top: 870%;
+        top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
     }
+    /* Metin içindeki uzun kelimeleri böl */
+    p {
+        white-space: nowrap; /* Alt satıra geçmesini engelle */
+        font-size: 19px; /* Yazı boyutunu 18 piksel olarak ayarla */
+        font-family: Arial, sans-serif; /* Yazı tipini Arial ve genel olarak sans-serif olarak ayarla */
+    }
+</style>
+</head>
+<body>
